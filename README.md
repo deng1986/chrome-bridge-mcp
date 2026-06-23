@@ -1,6 +1,6 @@
 # chrome-bridge-mcp
 
-连接 Codex / Claude Code 和真实 Chrome 会话的本地 MCP 桥接服务。
+连接 Codex / Claude Code 和真实 Chrome 会话的本地 MCP 桥接服务，让你的agennt可以通过chrome浏览器使用google search/ai。
 
 它通过 `127.0.0.1:9222` 上的 Chrome DevTools Protocol 连接 Chrome。登录、验证码、授权确认等动作仍然在真实 Chrome 里完成；AI 助理负责打开或复用任务标签页、执行 Google 搜索、读取当前页面、读取选中文本，以及运行少量页面内 JavaScript。
 
