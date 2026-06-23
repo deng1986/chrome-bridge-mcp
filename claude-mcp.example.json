@@ -1,12 +1,12 @@
 {
   "mcpServers": {
     "chrome-bridge": {
-      "command": "/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
-      "args": ["/Users/deng/ai/chrome-bridge-mcp/src/server.js"],
+      "command": "$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "args": ["$HOME/ai/chrome-bridge-mcp/src/server.js"],
       "env": {
         "CHROME_BRIDGE_PORT": "9222",
         "CHROME_BRIDGE_AUTO_START": "1",
-        "CHROME_BRIDGE_RUNTIME": "/Users/deng/runtime/.chrome-bridge-mcp"
+        "CHROME_BRIDGE_RUNTIME": "$HOME/runtime/.chrome-bridge-mcp"
       }
     }
   }

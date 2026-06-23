@@ -28,42 +28,42 @@
 单元测试：
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  --test /Users/deng/ai/chrome-bridge-mcp/test/unit.test.js
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  --test $HOME/ai/chrome-bridge-mcp/test/unit.test.js
 ```
 
 白盒覆盖率测试：
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
   --test \
   --experimental-test-coverage \
   --test-coverage-include=src/server.js \
   --test-coverage-lines=80 \
   --test-coverage-functions=80 \
   --test-coverage-branches=70 \
-  /Users/deng/ai/chrome-bridge-mcp/test/unit.test.js
+  $HOME/ai/chrome-bridge-mcp/test/unit.test.js
 ```
 
 E2E 测试：
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  /Users/deng/ai/chrome-bridge-mcp/test/run-e2e.js
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  $HOME/ai/chrome-bridge-mcp/test/run-e2e.js
 ```
 
 启用 Google 外网测试：
 
 ```bash
-RUN_GOOGLE_TEST=1 /Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  /Users/deng/ai/chrome-bridge-mcp/test/run-e2e.js
+RUN_GOOGLE_TEST=1 $HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  $HOME/ai/chrome-bridge-mcp/test/run-e2e.js
 ```
 
 真实 Google 人工验收：
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  /Users/deng/ai/chrome-bridge-mcp/scripts/manual-google-flow.js \
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  $HOME/ai/chrome-bridge-mcp/scripts/manual-google-flow.js \
   "Chrome DevTools Protocol"
 ```
 

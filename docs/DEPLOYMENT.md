@@ -7,7 +7,7 @@
 开发工作区：
 
 ```text
-/Users/deng/ai/chrome-bridge-mcp
+$HOME/ai/chrome-bridge-mcp
 ```
 
 运行态数据：
@@ -39,7 +39,7 @@
 使用项目脚本：
 
 ```bash
-/Users/deng/ai/chrome-bridge-mcp/scripts/start-chrome-bridge-profile.sh
+$HOME/ai/chrome-bridge-mcp/scripts/start-chrome-bridge-profile.sh
 ```
 
 该脚本会启动 Chrome，并使用：
@@ -56,8 +56,8 @@ MCP Server 通常由 Claude Code 或 Codex 通过 stdio 启动，不需要作为
 命令：
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  /Users/deng/ai/chrome-bridge-mcp/src/server.js
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  $HOME/ai/chrome-bridge-mcp/src/server.js
 ```
 
 环境变量：
@@ -65,7 +65,7 @@ MCP Server 通常由 Claude Code 或 Codex 通过 stdio 启动，不需要作为
 ```text
 CHROME_BRIDGE_PORT=9222
 CHROME_BRIDGE_AUTO_START=1
-CHROME_BRIDGE_RUNTIME=/Users/deng/runtime/.chrome-bridge-mcp
+CHROME_BRIDGE_RUNTIME=$HOME/runtime/.chrome-bridge-mcp
 ```
 
 启用 `CHROME_BRIDGE_AUTO_START=1` 后，如果 Claude Code 或 Codex 调用工具时 Chrome CDP 尚未启动，MCP Server 会自动启动托管 Chrome。运行态仍然使用：
@@ -121,7 +121,7 @@ docs/MULTI_MACHINE_DEPLOYMENT.md
 如果希望登录系统时自动启动 bridge 专用 Chrome profile，可以安装 LaunchAgent 模板：
 
 ```bash
-/Users/deng/ai/chrome-bridge-mcp/scripts/install-launch-agent.sh
+$HOME/ai/chrome-bridge-mcp/scripts/install-launch-agent.sh
 ```
 
 脚本会将项目模板复制到：

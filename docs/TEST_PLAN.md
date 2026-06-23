@@ -40,15 +40,15 @@
 ### 单元测试
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  --test /Users/deng/ai/chrome-bridge-mcp/test/unit.test.js
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  --test $HOME/ai/chrome-bridge-mcp/test/unit.test.js
 ```
 
 ### 白盒覆盖率
 
 ```bash
-cd /Users/deng/ai/chrome-bridge-mcp
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+cd $HOME/ai/chrome-bridge-mcp
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
   --test \
   --experimental-test-coverage \
   --test-coverage-include=src/server.js \
@@ -61,22 +61,22 @@ cd /Users/deng/ai/chrome-bridge-mcp
 ### 默认 E2E
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  /Users/deng/ai/chrome-bridge-mcp/test/run-e2e.js
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  $HOME/ai/chrome-bridge-mcp/test/run-e2e.js
 ```
 
 ### Google 可选 E2E
 
 ```bash
-RUN_GOOGLE_TEST=1 /Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  /Users/deng/ai/chrome-bridge-mcp/test/run-e2e.js
+RUN_GOOGLE_TEST=1 $HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  $HOME/ai/chrome-bridge-mcp/test/run-e2e.js
 ```
 
 ### 真实 Google 人工验收
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  /Users/deng/ai/chrome-bridge-mcp/scripts/manual-google-flow.js \
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  $HOME/ai/chrome-bridge-mcp/scripts/manual-google-flow.js \
   "Chrome DevTools Protocol"
 ```
 
@@ -85,8 +85,8 @@ RUN_GOOGLE_TEST=1 /Users/deng/.cache/codex-runtimes/codex-primary-runtime/depend
 ### 真实 Google AI 多轮讨论验收
 
 ```bash
-/Users/deng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  /Users/deng/ai/chrome-bridge-mcp/scripts/manual-google-ai-chat.js \
+$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  $HOME/ai/chrome-bridge-mcp/scripts/manual-google-ai-chat.js \
   "用中文解释 Chrome DevTools Protocol，并给出三个适合自动化测试的应用场景"
 ```
 
