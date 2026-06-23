@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-LABEL="com.deng.chrome-bridge-mcp"
+LABEL="com.chrome-bridge.mcp"
 TARGET_DIR="${HOME}/Library/LaunchAgents"
 TARGET_PLIST="${TARGET_DIR}/${LABEL}.plist"
 RUNTIME_DIR="${HOME}/runtime/.chrome-bridge-mcp"

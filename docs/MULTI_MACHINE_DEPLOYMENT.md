@@ -90,7 +90,7 @@ mkdir -p ~/ai
 该脚本会按当前机器的 `$HOME` 动态生成：
 
 ```text
-~/Library/LaunchAgents/com.deng.chrome-bridge-mcp.plist
+~/Library/LaunchAgents/com.chrome-bridge.mcp.plist
 ```
 
 ## Claude Code 接入

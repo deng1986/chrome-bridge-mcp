@@ -6,7 +6,7 @@ import { Type } from "typebox";
 
 const execFileAsync = promisify(execFile);
 
-const HOME = process.env.HOME || "/Users/deng";
+const HOME = process.env.HOME || "";
 const BUNDLED_NODE = `${HOME}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node`;
 const NODE = process.env.CHROME_BRIDGE_NODE || (existsSync(BUNDLED_NODE) ? BUNDLED_NODE : "node");
 const CLI = process.env.CHROME_BRIDGE_CLI || `${HOME}/ai/chrome-bridge-mcp/bin/chrome-bridge-cli.js`;
