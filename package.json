@@ -1,0 +1,24 @@
+{
+  "name": "chrome-bridge-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "chrome-bridge-mcp": "./bin/chrome-bridge-mcp.js",
+    "chrome-bridge-cli": "./bin/chrome-bridge-cli.js"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "check": "node --check ./src/server.js && node --check ./bin/chrome-bridge-cli.js && node --check ./test/run-e2e.js && node --check ./test/unit.test.js && node --check ./scripts/manual-google-flow.js && node --check ./scripts/manual-google-ai-chat.js",
+    "test": "node --test ./test/unit.test.js && node ./test/run-e2e.js",
+    "test:unit": "node --test ./test/unit.test.js",
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-include=src/server.js --test-coverage-lines=80 --test-coverage-functions=80 --test-coverage-branches=70 ./test/unit.test.js",
+    "test:e2e": "node ./test/run-e2e.js",
+    "test:google": "RUN_GOOGLE_TEST=1 node ./test/run-e2e.js",
+    "accept:google": "node ./scripts/manual-google-flow.js",
+    "accept:google-ai": "node ./scripts/manual-google-ai-chat.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
